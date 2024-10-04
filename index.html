@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improve Your English Writing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to English Writing Improvement</h1>
+        <p>Enhance your writing skills with our tasks and tips.</p>
+        <div class="dictionary-search">
+            <input type="text" id="dictionaryInput" placeholder="Search for a word...">
+            <button onclick="searchDictionary()">Search</button>
+            <div id="dictionaryResult"></div>
+        </div>
+        <div class="play-game">
+            <a href="game.html" class="play-game-btn">Play Game</a>
+        </div>
+    </header>
+    
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Task Section -->
+        <section class="task-section">
+            <h2>Writing Task of the Day</h2>
+            <div class="task-box">
+                <h3>Task 1: Write a Short Story</h3>
+                <p>Write a 200-word short story based on the following prompt: "The day I met a dragon."</p>
+                <button class="start-btn" onclick="startTask()">Start Writing</button>
+            </div>
+        </section>
+
+        <!-- Grammar Tips Section -->
+        <section class="tips-section">
+            <h2>Daily Grammar Tips</h2>
+            <div class="tip-box">
+                <button onclick="prevTip()">Previous</button>
+                <div id="grammarTipContent">
+                    <h3>Grammar Tip 1: Active vs Passive Voice</h3>
+                    <p>Active: The cat chased the mouse.<br>Passive: The mouse was chased by the cat.</p>
+                </div>
+                <button onclick="nextTip()">Next</button>
+            </div>
+        </section>
+
+        <!-- Writing Submission Section -->
+        <section class="submission-section">
+            <h2>Submit Your Writing</h2>
+            <form id="writingForm">
+                <label for="writingTitle">Title:</label>
+                <input type="text" id="writingTitle" required placeholder="Enter title...">
+
+                <label for="writingContent">Your Writing:</label>
+                <textarea id="writingContent" rows="5" required placeholder="Write here..."></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="downloadStory()">Download Story</button>
+            </form>
+            <div id="submissionLog"></div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Improve English Writing. All rights reserved.</p>
+            <p>Designed by <strong>Vishal Kumar</strong></p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:luckyrounak2895@gmail.com">luckyrounak2895@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917461932895">7461932895</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
